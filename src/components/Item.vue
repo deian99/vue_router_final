@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="containerr">
       <div class="item">
         <h3>{{ item.maker }}</h3>
         <p>{{ item.model }} {{ item.size }} {{ item.color }}</p>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.containerr {
   width: 300px;
   padding: 2px;
   display: grid;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerr">
     <MainHeader title="Welcome to TRY IT Moto" />
 
     <router-view />
@@ -96,7 +96,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 
 body {
@@ -104,6 +104,8 @@ body {
     url("https://wallpaperaccess.com/full/326186.jpg") left center no-repeat,
     url("https://cdn.wallpapersafari.com/5/3/OdteBp.jpg") left bottom no-repeat;
   background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
 }
 
 .stparagraph {

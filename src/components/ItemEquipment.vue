@@ -1,6 +1,6 @@
 <template>
   <div :key="item.id" v-for="item in items">
-    <div class="container">
+    <div class="containerr">
       <Item :item="item" class="items" />
       <div class="buttons-container">
         <BuyButton />
@@ -36,7 +36,7 @@ export default {
 .buttons-container {
   display: flex;
 }
-.container {
+.containerr {
   display: grid;
 }
 .items {

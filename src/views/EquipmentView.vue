@@ -172,21 +172,6 @@ export default {
         stock: false,
       },
     ];
-    this.images = [
-      {
-        img: "geaca-moto-1.png"
-      },
-      {
-        img: "geaca-moto-2.png"
-      },
-      {
-        img: "geaca-moto-3.png"
-      },
-      {
-        img: "geaca-moto-4.png"
-      },
-    ]
-
   },
 };
 </script>

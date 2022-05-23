@@ -23,7 +23,7 @@ export default {
     return {
       bikes: [],
       imagine: "../assets/ImagesEquipment/geaca-moto-1.png",
-      imagine2: "https://i.ibb.co/L9VWtDs/geaca-moto-1.webp"
+      imagine2: "https://i.ibb.co/L9VWtDs/geaca-moto-1.webp",
     };
   },
   created() {
@@ -42,7 +42,8 @@ export default {
         year: "2020",
         price: "35.000$",
         stock: true,
-        image: 'https://www.motorcyclespecs.co.za/Gallery_M-Z_16/Suzuki-GSX-R1000-19-5.jpg',
+        image:
+          "https://www.motorcyclespecs.co.za/Gallery_M-Z_16/Suzuki-GSX-R1000-19-5.jpg",
         /*mainImage: () => {
           return require('~assets' + '/ImagesEquipment' + this.image + '.png')
         },*/
@@ -62,7 +63,8 @@ export default {
         year: "1996",
         price: "5.000$",
         stock: true,
-        image:'https://www.motorcyclespecs.co.za/Gallery%20%20A/SUZUKI%20GSX%20600%20F%2088%20%202.jpg',
+        image:
+          "https://www.motorcyclespecs.co.za/Gallery%20%20A/SUZUKI%20GSX%20600%20F%2088%20%202.jpg",
       },
       {
         id: 2,
@@ -74,7 +76,8 @@ export default {
         year: "2022",
         price: "55.000$",
         stock: false,
-        image: 'https://gomagcdn.ro/domains/motomus.ro/files/product/original/kawasaki-ninja-h2r-21-37264-1450.jpg',
+        image:
+          "https://gomagcdn.ro/domains/motomus.ro/files/product/original/kawasaki-ninja-h2r-21-37264-1450.jpg",
       },
       {
         id: 3,
@@ -86,7 +89,7 @@ export default {
         year: "2019",
         price: "23.000$",
         stock: true,
-        image: 'https://www.motostop.eu/productimages/15943/42719.jpg',
+        image: "https://www.motostop.eu/productimages/15943/42719.jpg",
       },
       {
         id: 4,
@@ -98,7 +101,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: false,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 5,
@@ -110,7 +114,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 6,
@@ -122,7 +127,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 7,
@@ -134,7 +140,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: false,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 8,
@@ -146,7 +153,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 9,
@@ -158,7 +166,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 10,
@@ -170,7 +179,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: false,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 11,
@@ -182,7 +192,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 12,
@@ -194,7 +205,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 13,
@@ -206,7 +218,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 14,
@@ -218,7 +231,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
       {
         id: 15,
@@ -230,7 +244,8 @@ export default {
         year: "year",
         price: "$$$$",
         stock: true,
-        image: '',
+        image:
+          "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
       },
     ];
   },

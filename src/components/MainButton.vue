@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <button @click="onClick()" :style="{ background: color }" class="button">
+  <div class="containerr">
+    <button @click="onClick()" :style="{ background: color }" class="buttonss">
       {{ text }} <router-link to="/equipment"></router-link>
     </button>
   </div>
@@ -22,12 +22,10 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.containerr {
+
 }
-.button {
+.buttonss {
   font-family: Verdana, sans-serif;
   font-weight: 550;
   font-size: 15px;

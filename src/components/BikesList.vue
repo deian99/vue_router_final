@@ -1,6 +1,6 @@
 <template>
   <div :key="bike.id" v-for="bike in bikes">
-    <div class="container">
+    <div class="containerr">
       <Bike :bike="bike" class="items" />
       <div class="buttons-container">
         <BuyButton />
@@ -36,7 +36,7 @@ export default {
 .buttons-container {
   display: flex;
 }
-.container {
+.containerr {
   display: grid;
 }
 .items {

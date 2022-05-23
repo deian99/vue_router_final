@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="textContainer">
     <p>
       Experienţele unui motociclist la început de drum devin mai târziu amintiri
       de neuitat. Pentru că entuziasmul tău ca proaspăt motociclist este foarte
@@ -46,7 +46,7 @@ p {
     serif;
   font-size: 18px;
 }
-.container {
+.textContainer {
   background-color: rgba(180, 180, 180, 0.6);
   border-radius: 10px;
   margin-left: 20%;

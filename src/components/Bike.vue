@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="containerr">
       <div class="item">
         <h3>{{ bike.maker }}</h3>
         <p class="bikeDesc">
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.containerr {
   //background: #f4f4f4;
   width: 300px;
   //cursor: pointer;
