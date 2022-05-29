@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AccessoriesList from "../components/AccessoriesList.vue";
+import AccessoriesList from "../components/accessoriesComponents/AccessoriesList.vue";
 export default {
   name: "AccessoriesView",
   components: {

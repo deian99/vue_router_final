@@ -13,9 +13,9 @@
 
 <script>
 import Item from "./Item.vue";
-import BuyButton from "./BuyButton.vue";
-import ReadMoreButton from "./ReadMoreButton.vue";
-import TryItButton from "./TryItButton.vue";
+import BuyButton from "../buttons/BuyButton.vue";
+import ReadMoreButton from "../buttons/ReadMoreButton.vue";
+import TryItButton from "../buttons/TryItButton.vue";
 
 export default {
   name: "ItemEquipment",

@@ -4,7 +4,7 @@
       <div class="item">
         <h3>{{ item.maker }}</h3>
         <p>{{ item.model }} {{ item.size }} {{ item.color }}</p>
-        <img src="./logo.png" alt="image" />
+        <img src="../logo.png" alt="image" />
         <p v-if="item.stock" class="inStock">In stock</p>
         <p v-else class="noStock">Out of stock</p>
         <p>{{ item.price }}</p>

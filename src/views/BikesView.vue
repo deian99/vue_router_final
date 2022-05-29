@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import BikesList from "../components/BikesList.vue";
+import BikesList from "../components/bikesComponents/BikesList.vue";
 //localStorage si v_model
 
 export default {

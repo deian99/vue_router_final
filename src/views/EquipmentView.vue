@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ItemEquipment from "../components/ItemEquipment.vue";
+import ItemEquipment from "../components/equipmentComponents/ItemEquipment.vue";
 export default {
   name: "EquipmentView",
   components: {

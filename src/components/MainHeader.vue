@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import MainButton from "./MainButton.vue";
-import UserButton from "./UserButton.vue";
-import BasketButton from "./BasketButton.vue";
-import MenuButton from "./MenuButton.vue";
+import MainButton from "./buttons/MainButton.vue";
+import UserButton from "./buttons/UserButton.vue";
+import BasketButton from "./buttons/BasketButton.vue";
+import MenuButton from "./buttons/MenuButton.vue";
 
 export default {
   name: "MainHeader",
