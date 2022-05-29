@@ -30,7 +30,7 @@ export default {
   position: absolute;
   background-color: rgba(127, 127, 127, 0.35);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   right: 0;

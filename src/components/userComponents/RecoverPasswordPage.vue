@@ -3,9 +3,12 @@
     <form method="post">
       <div class="container">
         <br /><br />
-        <h1>Change password</h1>
+        <h1>Recover password</h1>
         <br />
-        <p>Please type in your account's username and email to change your password.</p>
+        <p>
+          Please type in your account's username and email to recover your
+          password.
+        </p>
         <br />
         <label for="username"><b>Username</b></label
         ><br />
@@ -27,19 +30,11 @@
           placeholder="Enter Email"
           required
         /><br />
-        <label for="newpassword"><b>New password</b></label
-        ><br />
         <br />
-        <input
-          type="password"
-          id="newpassword"
-          v-model="password"
-          placeholder="Enter new password"
-          required
-        /><br />
         <h3 id="status">{{ message }}</h3>
-        <button @click.prevent="changePassword" class="btn">
-          Change Password
+        <h3 class="recoverPw">{{recoverMessage}}{{password}}</h3>
+        <button @click.prevent="recoverPassword" class="btn">
+          Recover Password
         </button>
         <br /><br />
       </div>
@@ -49,30 +44,32 @@
 
 <script>
 export default {
-  name: "ChangePasswordPage",
+  name: "RecoverPasswordPage",
   data() {
-    return { message: "", username: "", password: "", email: "" };
+    return {
+      message: "",
+      username: "",
+      recoverMessage: "",
+      email: "",
+      password: "",
+    };
   },
   methods: {
-    changePassword() {
+    recoverPassword() {
       let h3 = document.getElementById("status");
       let users = this.$store.state.users;
-      let user = users.find(
-        (user) => user.username === this.username && user.email === this.email
-      );
-
-      if (user === undefined) {
-        this.message = "Username and/or email are incorrect or don't exist.";
-        h3.style.color = "red";
-      } else if (user.password === this.password) {
-        this.message = "The new password must be different from the old one.";
-        h3.style.color = "red";
-      } else {
-        user.password = this.password;
-        this.message = "You have successfully changed the password.";
-        h3.style.color = "green";
+      console.log(users)
+      let user = users.find((user) => user.username === this.username && user.email === this.email)
+      if(user === undefined) {
+        this.message = "Could not find any account for this combination of email and username. Please try again."
+        h3.style.color = "red"
       }
-    },
+      else {
+        this.password = user.password;
+        this.recoverMessage = "Your password is:   "
+
+          }
+    }
   },
 };
 </script>
@@ -83,6 +80,9 @@ export default {
   border-radius: 10px;
   margin-left: 20%;
   margin-right: 20%;
+}
+.recoverPw {
+  color: black;
 }
 h1 {
   color: black;

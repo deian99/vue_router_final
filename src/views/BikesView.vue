@@ -27,10 +27,6 @@ export default {
     };
   },
   created() {
-    let image = () => {
-      // eslint-disable-next-line no-undef
-      return require("../assets/ImagesEquipment/geaca-moto-1.png");
-    };
     this.bikes = [
       {
         id: 0,
@@ -44,14 +40,6 @@ export default {
         stock: true,
         image:
           "https://www.motorcyclespecs.co.za/Gallery_M-Z_16/Suzuki-GSX-R1000-19-5.jpg",
-        /*mainImage: () => {
-          return require('~assets' + '/ImagesEquipment' + this.image + '.png')
-        },*/
-        imageToShow: image,
-        imageShow: () => {
-          // eslint-disable-next-line no-undef
-          return require("./geaca-moto-1.png");
-        },
       },
       {
         id: 1,

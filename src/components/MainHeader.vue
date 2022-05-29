@@ -24,7 +24,7 @@
             <MainButton text="Bikes" color="rgba(131,141,237, 0.2)" />
           </router-link>
           <router-link to="/accessories">
-          <MainButton text="Accessories" color="rgba(131,141,237, 0.2)" />
+            <MainButton text="Accessories" color="rgba(131,141,237, 0.2)" />
           </router-link>
           <MainButton text="TRY IT" color="rgba(131,141,237, 0.2)" />
         </div>

@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 .containerr {
-
 }
 .buttonss {
   font-family: Verdana, sans-serif;

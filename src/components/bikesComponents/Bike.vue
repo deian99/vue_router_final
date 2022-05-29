@@ -7,7 +7,13 @@
           {{ bike.model }} <br />{{ bike.engine }}<br />
           {{ bike.type }}
         </p>
-        <img v-bind:src="bike.image" width="290" height="200" alt="image" class="productImage" />
+        <img
+          v-bind:src="bike.image"
+          width="290"
+          height="200"
+          alt="image"
+          class="productImage"
+        />
         <p v-if="bike.stock" class="inStock">In stock</p>
         <p v-else class="noStock">Out of stock</p>
         <p>{{ bike.price }}</p>

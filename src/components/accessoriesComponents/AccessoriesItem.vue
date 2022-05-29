@@ -34,16 +34,13 @@ export default {
 
 <style scoped>
 .containerr {
-//background: #f4f4f4;
   width: 300px;
-//cursor: pointer;
   padding: 2px;
   display: grid;
 }
 .item {
   background: #d3d3d3;
   color: black;
-//margin: 15px;
   margin-top: 8px;
   margin-bottom: 8px;
   padding: 2px;
@@ -60,8 +57,6 @@ h3 {
 }
 
 img {
-//padding-left: 45px;
-//align-self: center;
 }
 .inStock {
   color: green;

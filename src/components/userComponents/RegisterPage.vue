@@ -68,13 +68,14 @@
         <button @click.prevent="register()" class="registerbtn">
           Register
         </button>
-      </div>
+
 
       <div class="container signin">
         <p>
           Already have an account?
           <router-link to="/login">Sign in</router-link>.
         </p>
+      </div>
       </div>
     </form>
   </div>
@@ -128,15 +129,16 @@ export default {
   box-sizing: border-box;
 }
 
-.wrapper {
-  text-align: center;
-  background-color: rgba(180, 180, 180, 0.6);
-}
+
 
 /* Add padding to containers */
 .containerr {
   padding: 16px;
   color: black;
+  background-color: rgba(180, 180, 180, 0.6);
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 label {
   color: black;
@@ -182,7 +184,7 @@ hr {
 
 /* Add a blue text color to links */
 a {
-  color: dodgerblue;
+  color: blue;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */

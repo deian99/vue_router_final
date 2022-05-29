@@ -40,6 +40,11 @@ const router = createRouter({
       name: "changepsw",
       component: () => import("../views/ChangePasswordView.vue"),
     },
+    {
+      path: "/recoverpsw",
+      name: "recoverpsw",
+      component: () => import("../views/RecoverPasswordView.vue"),
+    },
   ],
 });
 

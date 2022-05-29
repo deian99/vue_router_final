@@ -2,6 +2,7 @@
   <div class="wrapper">
     <form method="post">
       <div class="container">
+        <br>
         <label for="username"><b>Username</b></label
         ><br />
         <input
@@ -23,9 +24,9 @@
         <h2 id="loginStatus">{{ message }}</h2>
         <button @click.prevent="login" type="submit">Login</button>
 
-        <div class="container">
+        <br>
           <button type="button" class="cancelbtn">Cancel</button>
-        </div>
+        <br><br>
         <label class="remember">
           <input type="checkbox" checked="checked" name="remember" />Remember me
         </label>
@@ -33,6 +34,7 @@
           Don't have an account?
           <router-link to="/register" class="link">Register here</router-link>.
         </p>
+        <br>
       </div>
     </form>
   </div>
@@ -93,6 +95,8 @@ form {
 }
 
 .remember {
+  margin-bottom: 5px;
+  font-size: 14px;
   color: white;
   background-color: #04aa6d;
   padding: 5px;
@@ -125,14 +129,17 @@ label {
 }
 
 .container {
-  padding: 16px;
+  background-color: rgba(180, 180, 180, 0.6);
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-span.psw {
+span {
   float: right;
   padding-top: 16px;
 }
 @media screen and (max-width: 300px) {
-  span.psw {
+  span {
     display: block;
     float: none;
   }
@@ -142,7 +149,7 @@ span.psw {
 }
 p {
   color: black;
-  background-color: #04aa6d;
+  font-weight: bold;
 }
 .link {
   color: blue;

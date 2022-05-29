@@ -3,18 +3,18 @@
     <MainHeader title="Welcome to TRY IT Moto" />
 
     <router-view />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import MainHeader from "./components/MainHeader.vue";
-import Footer from "./components/Footer.vue"
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
     MainHeader,
-    Footer
+    Footer,
   },
   data() {
     return {
@@ -99,7 +99,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
 }
 
 body {
@@ -108,7 +107,7 @@ body {
     url("https://cdn.wallpapersafari.com/5/3/OdteBp.jpg") left bottom no-repeat;
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: 0px;
+  margin: 0;
 }
 
 .stparagraph {
