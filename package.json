@@ -13,12 +13,12 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0-beta1",
     "bootstrap-vue": "^2.22.0",
     "node.js": "^0.0.1-security",
     "nodejs": "^0.0.0",
     "vue": "^3.2.35",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

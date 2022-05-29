@@ -22,7 +22,6 @@ export default {
   data() {
     return {
       items: [],
-      images: [],
     };
   },
   created() {

@@ -20,6 +20,26 @@ const router = createRouter({
       name: "bikes",
       component: () => import("../views/BikesView.vue"),
     },
+    {
+      path: "/accessories",
+      name: "accessories",
+      component: () => import("../views/AccessoriesView.vue"),
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("../views/LoginView.vue"),
+    },
+    {
+      path: "/register",
+      name: "register",
+      component: () => import("../views/RegisterView.vue"),
+    },
+    {
+      path: "/changepsw",
+      name: "changepsw",
+      component: () => import("../views/ChangePasswordView.vue"),
+    },
   ],
 });
 
