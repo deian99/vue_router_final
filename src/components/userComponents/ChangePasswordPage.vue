@@ -60,6 +60,7 @@ export default {
       let user = users.find(
         (user) => user.username === this.username && user.email === this.email
       );
+
       if (user === undefined) {
         this.message = "Username and/or email are incorrect or don't exist.";
         h3.style.color = "red";
