@@ -1,8 +1,20 @@
 import { createStore } from "vuex";
-export default createStore({
+import userModule from "./modules/user";
+import equipmentModule from "./modules/equipment";
+import bikesModule from "./modules/bikes";
+import accesModule from "./modules/accessories";
+import shopListItemModule from "./modules/shopListItem";
+
+let store = createStore({
   state: {},
-  mutations: {},
   actions: {},
   getters: {},
-  modules: {},
+  modules: {
+    userData: userModule,
+    equipData: equipmentModule,
+    bikesData: bikesModule,
+    accData: accesModule,
+    shopListData: shopListItemModule,
+  },
 });
+export default store;

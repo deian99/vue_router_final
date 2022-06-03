@@ -4,7 +4,11 @@
       <div class="item">
         <h3>{{ item.maker }}</h3>
         <p>{{ item.model }} {{ item.size }} {{ item.color }}</p>
-        <img src="../logo.png" alt="image" />
+        <img v-bind:src="item.image"
+             width="290"
+             height="200"
+             alt="image"
+             class="productImage" />
         <p v-if="item.stock" class="inStock">In stock</p>
         <p v-else class="noStock">Out of stock</p>
         <p>{{ item.price }}</p>
@@ -19,8 +23,6 @@ export default {
   name: "Item",
   props: {
     item: Object,
-    image: Object,
-    images: Array,
   },
 };
 </script>
@@ -44,13 +46,14 @@ export default {
 p {
   text-align: center;
 }
-
+.productImage {
+  border: 2px solid darkslategray;
+}
 h3 {
   text-align: center;
 }
 
 img {
-  padding-left: 45px;
   align-self: center;
 }
 .inStock {

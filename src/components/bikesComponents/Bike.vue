@@ -40,7 +40,6 @@ export default {
   width: 300px;
   //cursor: pointer;
   padding: 2px;
-  display: grid;
 }
 .item {
   background: #d3d3d3;
@@ -51,7 +50,7 @@ export default {
   padding: 2px;
   text-align: left;
   border: 3px solid #2c3e50;
-  grid-template-columns: 40% 30% 30%;
+
 }
 p {
   text-align: center;

@@ -25,8 +25,12 @@ export default {
     AccessoriesItem,
   },
   props: {
-    accessories: Array,
   },
+  data() {
+    return {
+      accessories: this.$store.state.accData.accessories
+    }
+  }
 };
 </script>
 

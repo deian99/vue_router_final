@@ -19,9 +19,7 @@ import TryItButton from "../buttons/TryItButton.vue";
 
 export default {
   name: "BikesView",
-  props: {
-    bikes: Array,
-  },
+  props: {},
   components: {
     Bike,
     BuyButton,
@@ -29,6 +27,9 @@ export default {
     TryItButton,
   },
   methods: {},
+  data() {
+    return { bikes: this.$store.state.bikesData.bikes}
+  }
 };
 </script>
 

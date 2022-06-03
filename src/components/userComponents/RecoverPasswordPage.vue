@@ -32,7 +32,7 @@
         /><br />
         <br />
         <h3 id="status">{{ message }}</h3>
-        <h3 class="recoverPw">{{recoverMessage}}{{password}}</h3>
+        <h3 class="recoverPw">{{ recoverMessage }}{{ password }}</h3>
         <button @click.prevent="recoverPassword" class="btn">
           Recover Password
         </button>
@@ -57,19 +57,20 @@ export default {
   methods: {
     recoverPassword() {
       let h3 = document.getElementById("status");
-      let users = this.$store.state.users;
-      console.log(users)
-      let user = users.find((user) => user.username === this.username && user.email === this.email)
-      if(user === undefined) {
-        this.message = "Could not find any account for this combination of email and username. Please try again."
-        h3.style.color = "red"
-      }
-      else {
+      let users = this.$store.state.userData.usersData;
+      console.log(users);
+      let user = users.find(
+        (user) => user.username === this.username && user.email === this.email
+      );
+      if (user === undefined) {
+        this.message =
+          "Could not find any account for this combination of email and username. Please try again.";
+        h3.style.color = "red";
+      } else {
         this.password = user.password;
-        this.recoverMessage = "Your password is:   "
-
-          }
-    }
+        this.recoverMessage = "Your password is:   ";
+      }
+    },
   },
 };
 </script>

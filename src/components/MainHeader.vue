@@ -36,7 +36,7 @@
 <script>
 import MainButton from "./buttons/MainButton.vue";
 import UserButton from "./buttons/UserButton.vue";
-import BasketButton from "./buttons/BasketButton.vue";
+import BasketButton from "../shoppingButtonComponents/BasketButton.vue";
 import MenuButton from "./buttons/MenuButton.vue";
 
 export default {

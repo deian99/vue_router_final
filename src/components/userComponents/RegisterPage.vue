@@ -69,13 +69,12 @@
           Register
         </button>
 
-
-      <div class="container signin">
-        <p>
-          Already have an account?
-          <router-link to="/login">Sign in</router-link>.
-        </p>
-      </div>
+        <div class="container signin">
+          <p>
+            Already have an account?
+            <router-link to="/login">Sign in</router-link>.
+          </p>
+        </div>
       </div>
     </form>
   </div>
@@ -108,9 +107,11 @@ export default {
         h2.style.color = "red";
       } else {
         h2.style.color = "green";
-        this.message = "Registration was successful. You may now log in.";
+        this.message =
+          "Registration was successful. Redirecting to login page now.";
         localStorage.setItem(this.username, this.password);
         let user = {
+          loginStatus: false,
           firstname: this.firstName,
           lastname: this.lastName,
           username: this.username,
@@ -118,6 +119,7 @@ export default {
           password: this.password,
         };
         this.$store.commit("addUser", user);
+        setTimeout(() => this.$router.push({ name: "login" }), 2500);
       }
     },
   },
@@ -128,8 +130,6 @@ export default {
 * {
   box-sizing: border-box;
 }
-
-
 
 /* Add padding to containers */
 .containerr {

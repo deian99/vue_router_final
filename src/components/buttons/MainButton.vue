@@ -1,6 +1,6 @@
 <template>
   <div class="containerr">
-    <button @click="onClick()" :style="{ background: color }" class="buttonss">
+    <button :style="{ background: color }" class="buttonss">
       {{ text }} <router-link to="/equipment"></router-link>
     </button>
   </div>
@@ -12,11 +12,6 @@ export default {
   props: {
     text: String,
     color: String,
-  },
-  methods: {
-    onClick() {
-      console.log("click");
-    },
   },
 };
 </script>

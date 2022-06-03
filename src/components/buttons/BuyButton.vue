@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="onClick()">Buy</button>
+    <button >Buy</button>
   </div>
 </template>
 
@@ -9,11 +9,11 @@ export default {
   name: "BuyButton",
   components: {},
   methods: {
-    onClick() {
-      let text = "Are you sure you want to buy?";
-      confirm(text);
-    },
   },
+  data() {
+    return {
+    }
+  }
 };
 </script>
 

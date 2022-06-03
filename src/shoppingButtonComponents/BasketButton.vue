@@ -3,10 +3,9 @@
     <font-awesome-icon icon="basket-shopping" size="2x" />
     <div class="dropdown-content">
       <h3>Shopping list</h3>
-      <p>Item 1</p>
-      <p>Item 2</p>
-      <p>Item 3</p>
-      <p>Item x</p>
+      <div >
+      <ShoppingList class="shopItem" />
+      </div>
       <h4>Delete items</h4>
       <h4>Proceed to payment</h4>
     </div>
@@ -14,12 +13,24 @@
 </template>
 
 <script>
+import ShoppingList from "./ShoppingList.vue";
 export default {
   name: "BasketButton",
+  components: {
+    ShoppingList,
+  },
+  data() {
+    return { shopItems: this.$store.state.shopListData.shopListItems };
+  },
+
 };
 </script>
 
 <style scoped>
+.shopItem {
+  border: 2px solid black;
+  display: grid;
+}
 .dropdown {
   position: relative;
   display: inline-block;

@@ -8,7 +8,7 @@
         <input
           type="text"
           id="username"
-          v-model="this.$store.state.username"
+          v-model="this.$store.state.userData.username"
           placeholder="Enter Username"
           required
         /><br />
@@ -49,11 +49,11 @@ export default {
   methods: {
     login() {
       let h2 = document.getElementById("loginStatus");
-      let users = this.$store.state.users;
+      let users = this.$store.state.userData.usersData;
       let user = users.find(
         (user) =>
           user.password === this.password &&
-          user.username === this.$store.state.username
+          user.username === this.$store.state.userData.username
       );
       if (user === undefined) {
         this.message = "Invalid username or password.";
@@ -61,8 +61,10 @@ export default {
       } else {
         this.message =
           "Successfully logged in ! You will be redirected to our home page shortly.";
+        user.loginStatus = true;
         h2.style.color = "green";
-        setTimeout(() => this.$router.push({ name: "home" }), 5000);
+        console.log(user.loginStatus)
+        setTimeout(() => this.$router.push({ name: "home" }), 2000);
       }
     },
     /*login() {

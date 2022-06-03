@@ -56,7 +56,7 @@ export default {
   methods: {
     changePassword() {
       let h3 = document.getElementById("status");
-      let users = this.$store.state.users;
+      let users = this.$store.state.userData.usersData;
       let user = users.find(
         (user) => user.username === this.username && user.email === this.email
       );

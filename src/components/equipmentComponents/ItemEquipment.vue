@@ -1,9 +1,9 @@
 <template>
   <div :key="item.id" v-for="item in items">
     <div class="containerr">
-      <Item :item="item" class="items" />
+      <Item :item="item" />
       <div class="buttons-container">
-        <BuyButton />
+        <BuyButton @click="onClick(item.id, item)"/>
         <ReadMoreButton />
         <TryItButton />
       </div>
@@ -19,16 +19,25 @@ import TryItButton from "../buttons/TryItButton.vue";
 
 export default {
   name: "ItemEquipment",
-  props: {
-    items: Array,
-  },
+  props: {},
   components: {
     Item,
     BuyButton,
     ReadMoreButton,
     TryItButton,
   },
-  methods: {},
+  methods: {
+    onClick(id, item) {
+      console.log(this.items.indexOf(id))
+      this.$emit('buy-item', id)
+      this.$store.commit('setShopStatus', id)
+      this.$store.commit('addShopItem', item)
+      console.log(this.$store.state.shopListData.shopListItems)
+    }
+  },
+  data() {
+    return { items: this.$store.state.equipData.equipments };
+  },
 };
 </script>
 

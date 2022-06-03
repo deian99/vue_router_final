@@ -2,9 +2,8 @@
   <div class="dropdown">
     <font-awesome-icon icon="ellipsis-vertical" size="2x" />
     <div class="dropdown-content">
-      <h4>Manage TRY IT List</h4>
-      <h4>Contact</h4>
       <h4>Why choose us</h4>
+      <h4>Contact</h4>
       <h4>About</h4>
     </div>
   </div>
