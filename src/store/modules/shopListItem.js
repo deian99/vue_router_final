@@ -20,12 +20,15 @@ const shopListItemModule = {
       );
       if (user === undefined) {
         alert("Please create an account and/or login first.");
-      } else {
+      } else if (item.stock === true){
         state.shopListItems.push(item);
         let i = 0;
         state.shopListItems.forEach((element) => (element.uniqueID = i++));
         item.removeRequest = false;
         console.log(state.shopListItems);
+      }
+      else{
+        alert("Product is out of stock.")
       }
     },
     removeShopItem(state, id) {
