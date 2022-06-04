@@ -38,7 +38,7 @@ const accesModule = {
         removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
-        model: "Z PROCARBON 100X",
+        model: "Z PRO CARBON 100X",
         size: "S",
         color: "black",
         image:

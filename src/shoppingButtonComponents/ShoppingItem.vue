@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="shopItem1">
-      {{ shopItem.maker }}<br />{{ shopItem.model }} <br />
+      <div>{{ shopItem.maker }}</div>
+      <div>{{ shopItem.model }}</div>
       <img v-bind:src="shopItem.image" alt="image" /><br />
-      {{ shopItem.price }}
+      <div>{{ shopItem.price }}</div>
     </div>
   </div>
 </template>

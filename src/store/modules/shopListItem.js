@@ -25,7 +25,6 @@ const shopListItemModule = {
         let i = 0;
         state.shopListItems.forEach((element) => (element.uniqueID = i++));
         item.removeRequest = false;
-        console.log(state.shopListItems);
       }
       else{
         alert("Product is out of stock.")
@@ -40,9 +39,7 @@ const shopListItemModule = {
         alert("Something went wrong. Please try again.");
       } else {
         let shopItemIndex = state.shopListItems.indexOf(shopItem);
-        console.log(shopItemIndex);
         state.shopListItems.splice(shopItemIndex, 1);
-        console.log(state.shopListItems);
       }
     },
   },

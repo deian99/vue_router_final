@@ -216,7 +216,6 @@ const equipmentModule = {
       let equipment = equipmentModule.state.equipments.find(
         (equipment) => equipment.id === id
       );
-      console.log(equipment)
       equipment.shopStatus = !equipment.shopStatus;
 
     },
