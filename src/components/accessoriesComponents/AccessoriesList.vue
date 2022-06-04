@@ -3,7 +3,7 @@
     <div class="containerr">
       <AccessoriesItem :acc="acc" class="items" />
       <div class="buttons-container">
-        <BuyButton />
+        <BuyButton @click="onClick(acc.id, acc)" />
         <ReadMoreButton />
         <TryItButton />
       </div>
@@ -24,13 +24,18 @@ export default {
     TryItButton,
     AccessoriesItem,
   },
-  props: {
+  props: {},
+  methods: {
+    onClick(id, item) {
+      this.$store.commit("setAccShopStatus", id);
+      this.$store.commit("addShopItem", item);
+    },
   },
   data() {
     return {
-      accessories: this.$store.state.accData.accessories
-    }
-  }
+      accessories: this.$store.state.accData.accessories,
+    };
+  },
 };
 </script>
 

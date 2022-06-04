@@ -4,6 +4,7 @@ const bikesModule = {
       {
         id: 0,
         shopStatus: false,
+        removeRequest: false,
         maker: "Suzuki",
         model: "GSXR1000",
         engine: "1000" + "cc",
@@ -18,6 +19,7 @@ const bikesModule = {
       {
         id: 1,
         shopStatus: false,
+        removeRequest: false,
         maker: "Suzuki",
         model: "GSXF600",
         engine: "600" + "cc",
@@ -32,6 +34,7 @@ const bikesModule = {
       {
         id: 2,
         shopStatus: false,
+        removeRequest: false,
         maker: "Kawasaki",
         model: "Ninja H2R",
         engine: "1000" + "cc",
@@ -46,6 +49,7 @@ const bikesModule = {
       {
         id: 3,
         shopStatus: false,
+        removeRequest: false,
         maker: "BMW",
         model: "1200RS",
         engine: "1000" + "cc",
@@ -59,6 +63,7 @@ const bikesModule = {
       {
         id: 4,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -73,6 +78,7 @@ const bikesModule = {
       {
         id: 5,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -87,6 +93,7 @@ const bikesModule = {
       {
         id: 6,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -101,6 +108,7 @@ const bikesModule = {
       {
         id: 7,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -115,6 +123,7 @@ const bikesModule = {
       {
         id: 8,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -129,6 +138,7 @@ const bikesModule = {
       {
         id: 9,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -143,6 +153,7 @@ const bikesModule = {
       {
         id: 10,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -157,6 +168,7 @@ const bikesModule = {
       {
         id: 11,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -171,6 +183,7 @@ const bikesModule = {
       {
         id: 12,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -185,6 +198,7 @@ const bikesModule = {
       {
         id: 13,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -199,6 +213,7 @@ const bikesModule = {
       {
         id: 14,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -213,6 +228,7 @@ const bikesModule = {
       {
         id: 15,
         shopStatus: false,
+        removeRequest: false,
         maker: "maker",
         model: "model",
         engine: "1000" + "cc",
@@ -226,7 +242,12 @@ const bikesModule = {
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    setBikesShopStatus(state, id) {
+      let bike = bikesModule.state.bikes.find((bike) => bike.id === id);
+      bike.shopStatus = !bike.shopStatus;
+    },
+  },
   actions: {},
   getters: {},
   modules: {},

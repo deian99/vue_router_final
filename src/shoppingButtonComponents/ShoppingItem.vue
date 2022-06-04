@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="shopItem">
-        {{ shopItem.maker }}<br />{{ shopItem.model }} <br>
-      <img v-bind:src="shopItem.image" alt="image"><br>
+    <div class="shopItem1">
+      {{ shopItem.maker }}<br />{{ shopItem.model }} <br />
+      <img v-bind:src="shopItem.image" alt="image" /><br />
       {{ shopItem.price }}
     </div>
   </div>
@@ -18,17 +18,17 @@ export default {
 </script>
 
 <style scoped>
-.shopItem {
+.shopItem1 {
   color: black;
-  background-color: rgba(127, 127, 127, 0.5);
+  background-color: rgba(127, 127, 127, 0.7);
   font-weight: 550;
   justify-items: center;
-
+  grid-template-columns: 70% 30%;
 }
 img {
   justify-self: center;
   align-self: center;
-  width: 100%;
-  height: 100%;
+  width: 75px;
+  height: 75px;
 }
 </style>

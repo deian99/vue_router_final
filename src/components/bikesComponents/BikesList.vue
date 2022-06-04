@@ -3,7 +3,7 @@
     <div class="containerr">
       <Bike :bike="bike" class="items" />
       <div class="buttons-container">
-        <BuyButton />
+        <BuyButton @click="onClick(bike.id, bike)"/>
         <ReadMoreButton />
         <TryItButton />
       </div>
@@ -26,10 +26,15 @@ export default {
     ReadMoreButton,
     TryItButton,
   },
-  methods: {},
+  methods: {
+    onClick(id, item) {
+      this.$store.commit("setBikesShopStatus", id);
+      this.$store.commit("addShopItem", item);
+    },
+    },
   data() {
-    return { bikes: this.$store.state.bikesData.bikes}
-  }
+    return { bikes: this.$store.state.bikesData.bikes };
+  },
 };
 </script>
 

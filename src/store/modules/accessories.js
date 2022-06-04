@@ -3,7 +3,9 @@ const accesModule = {
     accessories: [
       {
         id: 0,
+        uniqueID: 0,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -16,7 +18,9 @@ const accesModule = {
       },
       {
         id: 1,
+        uniqueID: 1,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "Dainese",
         model: "PRO HANDLE X",
@@ -29,10 +33,12 @@ const accesModule = {
       },
       {
         id: 2,
+        uniqueID: 2,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
-        model: "ZPROCARBON100X",
+        model: "Z PROCARBON 100X",
         size: "S",
         color: "black",
         image:
@@ -42,7 +48,9 @@ const accesModule = {
       },
       {
         id: 3,
+        uniqueID: 3,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "O Neal",
         model: "BUTCH CARBON",
@@ -55,7 +63,9 @@ const accesModule = {
       },
       {
         id: 4,
+        uniqueID: 4,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "Garibaldi",
         model: "GLADIUS KANGAROO KV",
@@ -68,7 +78,9 @@ const accesModule = {
       },
       {
         id: 5,
+        uniqueID: 5,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "W-TEC",
         model: "RADOON MBG-1621-16",
@@ -82,6 +94,7 @@ const accesModule = {
       {
         id: 6,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -95,6 +108,7 @@ const accesModule = {
       {
         id: 7,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -108,6 +122,7 @@ const accesModule = {
       {
         id: 8,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -121,6 +136,7 @@ const accesModule = {
       {
         id: 9,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -134,6 +150,7 @@ const accesModule = {
       {
         id: 10,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -147,6 +164,7 @@ const accesModule = {
       {
         id: 11,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -160,6 +178,7 @@ const accesModule = {
       {
         id: 12,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -173,6 +192,7 @@ const accesModule = {
       {
         id: 13,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -186,6 +206,7 @@ const accesModule = {
       {
         id: 14,
         shopStatus: false,
+        removeRequest: false,
         type: "Gloves",
         maker: "AlpineStars",
         model: "XBNV38D",
@@ -198,7 +219,12 @@ const accesModule = {
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    setAccShopStatus(state, id) {
+      let acc = accesModule.state.accessories.find((acc) => acc.id === id);
+      acc.shopStatus = !acc.shopStatus;
+    },
+  },
   actions: {},
   getters: {},
   modules: {},

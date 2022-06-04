@@ -3,10 +3,10 @@
     <font-awesome-icon icon="basket-shopping" size="2x" />
     <div class="dropdown-content">
       <h3>Shopping list</h3>
-      <div >
-      <ShoppingList class="shopItem" />
+      <div class="shopList">
+      <ShoppingList />
       </div>
-      <h4>Delete items</h4>
+      <h4 @click="deleteItems()" class="delete-items">Delete items</h4>
       <h4>Proceed to payment</h4>
     </div>
   </div>
@@ -22,14 +22,28 @@ export default {
   data() {
     return { shopItems: this.$store.state.shopListData.shopListItems };
   },
+  methods: {
+    deleteItems() {
+      this.$store.commit("removeItems");
+    },
+  },
 
 };
 </script>
 
 <style scoped>
-.shopItem {
+.delete-items {
+  color: black;
+  cursor: pointer;
+}
+.delete-items:hover {
+  color: white;
+}
+.shopList {
   border: 2px solid black;
   display: grid;
+  grid-template-columns: 50% 50%;
+
 }
 .dropdown {
   position: relative;
@@ -47,6 +61,7 @@ export default {
   right: 0;
   border-radius: 15px;
   border: 1px solid rgba(127, 127, 127);
+  max-width: 300px;
 }
 p:hover {
   color: white;
