@@ -5,7 +5,10 @@
         <br /><br />
         <h1>Change password</h1>
         <br />
-        <p>Please type in your account's username and email to change your password.</p>
+        <p>
+          Please type in your account's username and email to change your
+          password.
+        </p>
         <br />
         <label for="username"><b>Username</b></label
         ><br />

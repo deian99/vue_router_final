@@ -2,7 +2,12 @@
   <div :key="shopItem" v-for="shopItem in shopItems">
     <div class="containerr">
       <ShoppingItem :shopItem="shopItem" class="items" />
-      <font-awesome-icon icon="xmark" size="2x" class="remove" @click="deleteShopItem(shopItem.uniqueID)"/>
+      <font-awesome-icon
+        icon="xmark"
+        size="2x"
+        class="remove"
+        @click="deleteShopItem(shopItem.uniqueID)"
+      />
     </div>
   </div>
 </template>
@@ -18,10 +23,10 @@ export default {
     return { shopItems: this.$store.state.shopListData.shopListItems };
   },
   methods: {
-    deleteShopItem (id) {
-      this.$store.commit("setItemRemoveRequest", id)
-      this.$store.commit("removeShopItem", id)
-    }
+    deleteShopItem(id) {
+      this.$store.commit("setItemRemoveRequest", id);
+      this.$store.commit("removeShopItem", id);
+    },
   },
 };
 </script>

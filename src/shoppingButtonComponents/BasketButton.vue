@@ -4,10 +4,12 @@
     <div class="dropdown-content">
       <h3>Shopping list</h3>
       <div class="shopList">
-      <ShoppingList />
+        <ShoppingList />
       </div>
       <h4 @click="deleteItems()" class="delete-items">Delete items</h4>
-      <h4>Proceed to payment</h4>
+      <router-link to="/payment" class="link">
+        <h4>Proceed to payment</h4>
+      </router-link>
     </div>
   </div>
 </template>
@@ -27,11 +29,18 @@ export default {
       this.$store.commit("removeItems");
     },
   },
-
 };
 </script>
 
 <style scoped>
+.link {
+  color: black;
+  text-decoration: none;
+}
+h4:hover {
+  color: white;
+  text-decoration-line: underline;
+}
 .delete-items {
   color: black;
   cursor: pointer;
@@ -43,7 +52,6 @@ export default {
   border: 2px solid black;
   display: grid;
   grid-template-columns: 50% 50%;
-
 }
 .dropdown {
   position: relative;

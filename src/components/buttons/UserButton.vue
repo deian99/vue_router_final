@@ -50,6 +50,7 @@ export default {
         (user) => user.loginStatus === true
       );
       user.loginStatus = false;
+      this.$store.commit("removeItems");
       setTimeout(() => this.$router.push({ name: "home" }), 500);
     },
   },

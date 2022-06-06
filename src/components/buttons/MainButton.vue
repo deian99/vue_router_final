@@ -19,6 +19,12 @@ export default {
 <style scoped>
 .containerr {
 }
+.buttonss:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(131, 141, 237);
+}
 .buttonss {
   font-family: Verdana, sans-serif;
   font-weight: 550;

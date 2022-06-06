@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button >Buy</button>
+    <button>Buy</button>
   </div>
 </template>
 
@@ -8,12 +8,10 @@
 export default {
   name: "BuyButton",
   components: {},
-  methods: {
-  },
+  methods: {},
   data() {
-    return {
-    }
-  }
+    return {};
+  },
 };
 </script>
 

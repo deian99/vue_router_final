@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <br>
+    <br />
     <p>Username: {{ user.username }}</p>
     <p>First Name: {{ user.firstname }}</p>
     <p>Last Name: {{ user.lastname }}</p>
     <p>E-mail: {{ user.email }}</p>
-    <br>
+    <br />
   </div>
 </template>
 
@@ -15,26 +15,6 @@ export default {
   props: {
     user: Object,
   },
-  /*
-  data() {
-    return {
-      username: "",
-      firstname: "",
-      lastname: "",
-      email: "",
-    };
-  },*/
- /*methods: {
-    getAccDetails() {
-      let user = this.$store.state.users.find(
-        (user) => user.loginStatus === true
-      );
-      this.username = user.username;
-      this.firstname = user.firstname;
-      this.lastname = user.lastname;
-      this.email = user.email;
-    },
-  },*/
 };
 </script>
 

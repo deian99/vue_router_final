@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="shopItem1">
       <div>{{ shopItem.maker }}</div>
       <div>{{ shopItem.model }}</div>
+      <div>{{ shopItem.size }}</div>
+      <div>{{ shopItem.type }}</div>
       <img v-bind:src="shopItem.image" alt="image" /><br />
       <div>{{ shopItem.price }}</div>
     </div>
@@ -19,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  border: 1px solid black;
+}
 .shopItem1 {
   color: black;
   background-color: rgba(127, 127, 127, 0.7);
@@ -29,7 +34,8 @@ export default {
 img {
   justify-self: center;
   align-self: center;
-  width: 75px;
-  height: 75px;
+  border: 1px solid black;
+  width: 120px;
+  height: 100px;
 }
 </style>

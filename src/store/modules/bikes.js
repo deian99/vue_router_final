@@ -11,7 +11,7 @@ const bikesModule = {
         bhp: 160 + "bhp",
         type: "Sport",
         year: "2020",
-        price: "35.000$",
+        price: "35000$",
         stock: true,
         image:
           "https://www.motorcyclespecs.co.za/Gallery_M-Z_16/Suzuki-GSX-R1000-19-5.jpg",
@@ -26,7 +26,7 @@ const bikesModule = {
         bhp: 87 + "bhp",
         type: "Sport Cruiser",
         year: "1996",
-        price: "5.000$",
+        price: "5000$",
         stock: true,
         image:
           "https://www.motorcyclespecs.co.za/Gallery%20%20A/SUZUKI%20GSX%20600%20F%2088%20%202.jpg",
@@ -41,7 +41,7 @@ const bikesModule = {
         bhp: 240 + "bhp",
         type: "Hyperbike",
         year: "2022",
-        price: "55.000$",
+        price: "55000$",
         stock: false,
         image:
           "https://gomagcdn.ro/domains/motomus.ro/files/product/original/kawasaki-ninja-h2r-21-37264-1450.jpg",
@@ -56,7 +56,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "Sport Touring",
         year: "2019",
-        price: "23.000$",
+        price: "23000$",
         stock: true,
         image: "https://www.motostop.eu/productimages/15943/42719.jpg",
       },
@@ -70,7 +70,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: false,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -85,7 +85,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -100,7 +100,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -115,7 +115,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: false,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -130,7 +130,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -145,7 +145,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -160,7 +160,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: false,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -175,7 +175,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -190,7 +190,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -205,7 +205,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -220,7 +220,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",
@@ -235,7 +235,7 @@ const bikesModule = {
         bhp: 220 + "bhp",
         type: "type",
         year: "year",
-        price: "$$$$",
+        price: "2000$",
         stock: true,
         image:
           "https://cdn3.vectorstock.com/i/1000x1000/79/47/vintage-motorcycle-logo-template-vector-6187947.jpg",

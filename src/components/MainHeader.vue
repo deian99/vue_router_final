@@ -12,21 +12,38 @@
       <div class="mainHeader">
         <div class="headerButtons">
           <router-link to="/">
-            <MainButton text="Home" color="rgba(131,141,237, 0.2)"></MainButton>
+            <MainButton
+              text="Home"
+              color="rgba(131,141,237, 0.2)"
+              class="mainButton"
+            ></MainButton>
           </router-link>
           <router-link to="/equipment">
             <MainButton
+              class="mainButton"
               text="Equipment"
               color="rgba(131,141,237, 0.2)"
             ></MainButton>
           </router-link>
           <router-link to="/bikes">
-            <MainButton text="Bikes" color="rgba(131,141,237, 0.2)" />
+            <MainButton
+              text="Bikes"
+              color="rgba(131,141,237, 0.2)"
+              class="mainButton"
+            />
           </router-link>
           <router-link to="/accessories">
-            <MainButton text="Accessories" color="rgba(131,141,237, 0.2)" />
+            <MainButton
+              text="Accessories"
+              color="rgba(131,141,237, 0.2)"
+              class="mainButton"
+            />
           </router-link>
-          <MainButton text="TRY IT" color="rgba(131,141,237, 0.2)" />
+          <MainButton
+            text="TRY IT"
+            color="rgba(131,141,237, 0.2)"
+            class="mainButton"
+          />
         </div>
       </div>
     </div>

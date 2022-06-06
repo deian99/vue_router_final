@@ -11,7 +11,6 @@ const shopListItemModule = {
       let shopItem = state.shopListItems.find(
         (shopItem) => shopItem.uniqueID === id
       );
-      console.log(shopItem);
       shopItem.removeRequest = !shopItem.removeRequest;
     },
     addShopItem(state, item) {
@@ -20,14 +19,13 @@ const shopListItemModule = {
       );
       if (user === undefined) {
         alert("Please create an account and/or login first.");
-      } else if (item.stock === true){
+      } else if (item.stock === true) {
         state.shopListItems.push(item);
         let i = 0;
         state.shopListItems.forEach((element) => (element.uniqueID = i++));
         item.removeRequest = false;
-      }
-      else{
-        alert("Product is out of stock.")
+      } else {
+        alert("Product is out of stock.");
       }
     },
     removeShopItem(state, id) {

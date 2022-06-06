@@ -11,7 +11,7 @@ const equipmentModule = {
         color: "black",
         image:
           "https://gomagcdn.ro/domains/bikermag.ro/files/product/original/geaca-moto-piele-textil-alpinestars-sp-x-1622833.jpg",
-        price: "200.00$",
+        price: "200$",
         stock: false,
       },
       {
@@ -24,7 +24,7 @@ const equipmentModule = {
         color: "white",
         image:
           "https://scutermag.ro/wp-content/uploads/2019/12/Geaca-Moto-sport-Alpinestars-ATEM-V3-culoare-negru-alb-dimensiune-48-1.jpg",
-        price: "150.00$",
+        price: "150$",
         stock: true,
       },
       {
@@ -37,7 +37,7 @@ const equipmentModule = {
         color: "red & blue",
         image:
           "https://static.moto24.ro/images/eshop/products/list/dainese-geaca-moto-textila-ranch-tex-black-iris-lava-red-light-blu-2022.jpg",
-        price: "100.00$",
+        price: "100$",
         stock: false,
       },
       {
@@ -50,7 +50,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://gomagcdn.ro/domains/motomus.ro/files/product/original/geaca-piele-dainese-super-speed-3-black-white-white-marime-44-16213-984007.png",
-        price: "250.00$",
+        price: "250$",
         stock: true,
       },
       {
@@ -63,7 +63,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: true,
       },
       {
@@ -76,7 +76,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
       {
@@ -89,7 +89,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
       {
@@ -100,7 +100,7 @@ const equipmentModule = {
         model: "DFB200",
         size: "L",
         color: "black",
-        price: "200.00$",
+        price: "200$",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
         stock: false,
@@ -115,7 +115,7 @@ const equipmentModule = {
         color: "white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "150.00$",
+        price: "150$",
         stock: true,
       },
       {
@@ -128,7 +128,7 @@ const equipmentModule = {
         color: "red & blue",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "100.00$",
+        price: "100$",
         stock: false,
       },
       {
@@ -141,7 +141,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "250.00$",
+        price: "250$",
         stock: true,
       },
       {
@@ -154,7 +154,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: true,
       },
       {
@@ -167,7 +167,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
       {
@@ -180,7 +180,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
       {
@@ -193,7 +193,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
       {
@@ -206,7 +206,7 @@ const equipmentModule = {
         color: "black & white",
         image:
           "https://www.ubuy.com.ro/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFvWkk4ZTNkYUwuX0FDX1NMMTUwMF8uanBn.jpg",
-        price: "$$$$$",
+        price: "150$",
         stock: false,
       },
     ],
@@ -217,14 +217,7 @@ const equipmentModule = {
         (equipment) => equipment.id === id
       );
       equipment.shopStatus = !equipment.shopStatus;
-
     },
-    setEquipRemoveStatus(state, id) {
-      let equipment = equipmentModule.state.equipments.find(
-        (equipment) => equipment.id === id
-      );
-      equipment.removeRequest = !equipment.removeRequest;
-    }
   },
   actions: {},
   getters: {},

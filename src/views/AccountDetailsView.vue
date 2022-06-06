@@ -1,6 +1,6 @@
 <template>
-  <button @click="getAccDetails" >Show details</button>
-  <AccountDetailsPage v-if="showComponent" :user="user"/>
+  <button @click="getAccDetails">Show details</button>
+  <AccountDetailsPage v-if="showComponent" :user="user" />
 </template>
 
 <script>
@@ -9,25 +9,23 @@ import AccountDetailsPage from "../components/userComponents/AccountDetailsPage.
 export default {
   name: "AccountDetailsView",
   components: {
-    AccountDetailsPage
+    AccountDetailsPage,
   },
   data() {
     return {
       user: Function,
       showComponent: false,
-    }
+    };
   },
   methods: {
-    getAccDetails () {
+    getAccDetails() {
       this.user = this.$store.state.userData.usersData.find(
         (user) => user.loginStatus === true
-      )
-      console.log(this.user)
-      this.showComponent = !this.showComponent
-
-    }
-
-  }
+      );
+      console.log(this.user);
+      this.showComponent = !this.showComponent;
+    },
+  },
 };
 </script>
 
@@ -41,5 +39,4 @@ button {
   cursor: pointer;
   border-radius: 15px;
 }
-
 </style>

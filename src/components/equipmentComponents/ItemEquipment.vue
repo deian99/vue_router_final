@@ -45,7 +45,4 @@ export default {
 .containerr {
   display: grid;
 }
-.items {
-  grid-template-columns: 70% 30%;
-}
 </style>

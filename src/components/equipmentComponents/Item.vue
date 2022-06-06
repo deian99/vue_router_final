@@ -4,11 +4,13 @@
       <div class="item">
         <h3>{{ item.maker }}</h3>
         <p>{{ item.model }} {{ item.size }} {{ item.color }}</p>
-        <img v-bind:src="item.image"
-             width="290"
-             height="200"
-             alt="image"
-             class="productImage" />
+        <img
+          v-bind:src="item.image"
+          width="290"
+          height="200"
+          alt="image"
+          class="productImage"
+        />
         <p v-if="item.stock" class="inStock">In stock</p>
         <p v-else class="noStock">Out of stock</p>
         <p>{{ item.price }}</p>

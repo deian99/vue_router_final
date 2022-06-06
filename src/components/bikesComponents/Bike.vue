@@ -50,7 +50,6 @@ export default {
   padding: 2px;
   text-align: left;
   border: 3px solid #2c3e50;
-
 }
 p {
   text-align: center;

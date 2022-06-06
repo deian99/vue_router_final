@@ -50,6 +50,11 @@ const router = createRouter({
       name: "accdetails",
       component: () => import("../views/AccountDetailsView.vue"),
     },
+    {
+      path: "/payment",
+      name: "payment",
+      component: () => import("../views/PaymentWallView.vue"),
+    },
   ],
 });
 

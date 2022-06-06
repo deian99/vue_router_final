@@ -7,11 +7,9 @@ import RecoverPasswordPage from "../components/userComponents/RecoverPasswordPag
 export default {
   name: "RecoverPasswordVue",
   components: {
-    RecoverPasswordPage
-  }
+    RecoverPasswordPage,
+  },
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

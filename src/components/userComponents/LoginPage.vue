@@ -2,7 +2,7 @@
   <div class="wrapper">
     <form method="post">
       <div class="container">
-        <br>
+        <br />
         <label for="username"><b>Username</b></label
         ><br />
         <input
@@ -23,10 +23,11 @@
         /><br />
         <h2 id="loginStatus">{{ message }}</h2>
         <button @click.prevent="login" type="submit">Login</button>
-
-        <br>
-          <button type="button" class="cancelbtn">Cancel</button>
-        <br><br>
+        <br />
+        <button type="button" class="cancelbtn" @click="cancelLogin">
+          Cancel
+        </button>
+        <br /><br />
         <label class="remember">
           <input type="checkbox" checked="checked" name="remember" />Remember me
         </label>
@@ -34,7 +35,7 @@
           Don't have an account?
           <router-link to="/register" class="link">Register here</router-link>.
         </p>
-        <br>
+        <br />
       </div>
     </form>
   </div>
@@ -47,6 +48,9 @@ export default {
     return { message: "", username: "", password: "" };
   },
   methods: {
+    cancelLogin() {
+      setTimeout(() => this.$router.push({ name: "home" }), 500);
+    },
     login() {
       let h2 = document.getElementById("loginStatus");
       let users = this.$store.state.userData.usersData;
@@ -63,28 +67,10 @@ export default {
           "Successfully logged in ! You will be redirected to our home page shortly.";
         user.loginStatus = true;
         h2.style.color = "green";
-        console.log(user.loginStatus)
+        console.log(user.loginStatus);
         setTimeout(() => this.$router.push({ name: "home" }), 2000);
       }
     },
-    /*login() {
-      console.log(this.$store.state.username);
-      let h2 = document.getElementById("loginStatus");
-      let data = localStorage.getItem(this.$store.state.username);
-      if (data === null) {
-        this.message = "User does not exist. Please register first.";
-        h2.style.color = "red";
-      } else if (data === this.password) {
-        this.message =
-          "Successfully logged in ! You will be redirected to our home page shortly.";
-        h2.style.color = "green";
-        //this.$router.push({ name: "home"})
-        setTimeout(() => this.$router.push({ name: "home" }), 5000);
-      } else {
-        this.message = "Incorrect password !";
-        h2.style.color = "red";
-      }
-    },*/
   },
 };
 </script>
